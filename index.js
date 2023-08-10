@@ -55,6 +55,9 @@ function temperature(temp){
 }
 temperature(19);
 
+//ARROW FUNCTIONS
+let add=(a,b)=>a+b;
+
 
 //unary operators
 let f =false;
@@ -99,3 +102,25 @@ console.log(d);
 //convert a string to an int
 e=parseInt(prompt('how old are you'));
 console.log(e);
+
+//creating an array
+let colors=['red','green','blue'];
+console.log(colors[0]);
+
+
+//ERROR HANDLING
+function test(){
+  try{
+    return 1;
+  }
+  catch(error){
+    return 2;
+
+  }
+  finally{
+    return 3;
+  }
+  
+}
+console.log(test());
+
