@@ -1,7 +1,7 @@
 // calculatearearectangle.js
 
 // Arrow function to calculate the area of a rectangle
-let calculateArea = (length, width) => length / width;
+let calculateArea = (length, width) => length * width;
 
 // Function to handle the button click and display the result
 function handleCalculate() {

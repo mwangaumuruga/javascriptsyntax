@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Validation</title>
+</head>
+<body>
+    <h1>Basic Form Validation</h1>
+    <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" style="color: red;"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const usernameInput = document.getElementById("username");
+        const usernameError = document.getElementById("usernameError");
+
+        form.addEventListener("submit", function(event) {
+            if (usernameInput.value.trim() === "") {
+                usernameError.textContent = "Username cannot be empty";
+                event.preventDefault();
+            } else {
+                usernameError.textContent = "";
+            }
+        });
+    </script>
+</body>
+</html>
