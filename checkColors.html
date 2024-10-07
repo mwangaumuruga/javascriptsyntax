@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="env.js"></script>
+</head>
+<body>
+<script>
+  function getColor(selection) {
+	switch(selection){
+		// Add more options here
+		case 'red':
+			return true;
+		case 'green':
+			return true;
+		case 'blue':
+			return true;
+	    default:
+	    	return false;  //returns false because the user picked an unavailable color
+	}
+}
+
+let colorname = prompt('What color do you want?').trim().toLowerCase();
+let isAvailable = getColor(colorname);
+
+if(isAvailable) {
+	console.log('Good news! That color is available');
+    document.body.innerHTML = '<h2>Good news! That color is available</h2>';
+} else {
+	console.log('We are sorry, that color is not available');
+    document.body.innerHTML = '<h2>We are sorry, that color is not available</h2>';
+}
+
+</script>    
+</body>
+</html>

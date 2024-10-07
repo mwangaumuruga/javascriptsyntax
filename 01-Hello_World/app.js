@@ -8,3 +8,5 @@ console.log('Me nuh listen to badmind talk');
 console.log("hello wolrd");
 console.log('Me nuh listen to badmind talk');
 
+console.log("reinforcing on JS");
+
